@@ -7,6 +7,6 @@ alarm_set(0, 60);
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 71000018
-/// @DnDArgument : "expr" "10"
+/// @DnDArgument : "expr" "100"
 /// @DnDArgument : "var" "hp"
-hp = 10;
+hp = 100;

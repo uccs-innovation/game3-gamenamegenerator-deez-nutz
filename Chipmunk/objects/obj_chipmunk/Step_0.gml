@@ -14,7 +14,7 @@ if(canShoot)
 		sprite_index = spr_chipmunkThrow;
 		move_towards_point(mouse_x,mouse_y,5)
 		canShoot = false
-		alarm_set(0, 20);
+		alarm_set(0, 10);
 	}
 }
 	
