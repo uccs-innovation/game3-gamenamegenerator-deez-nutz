@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Util Objects",
-    "path": "folders/Objects/Util Objects.yy",
+    "name": "Chipmunk",
+    "path": "Chipmunk.yyp",
   },
 }

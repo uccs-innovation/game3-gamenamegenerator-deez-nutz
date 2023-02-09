@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
+
 //rotates chipmunk to mouse
 image_angle = point_direction(x,y,mouse_x,mouse_y);
 
@@ -11,6 +14,7 @@ if(canShoot)
 	//if left mouse is pressed shoot chipmunk towards mouse
 	if(mouse_check_button_pressed(mb_left))
 	{
+		path_end();
 		sprite_index = spr_chipmunkThrow;
 		move_towards_point(mouse_x,mouse_y,5)
 		canShoot = false
@@ -29,6 +33,14 @@ if(mouse_check_button_pressed(mb_right))
 
 }
 	
+	
+if(path_index == 1)
+{
+	
+	path_position.x = obj_person.x;
+	path_position.y = obj_person.y;
+}
+
 
 
 

@@ -3,7 +3,7 @@
 
 toPlyr = point_direction(x,y,obj_chipmunk.x,obj_chipmunk.y);
 
-speed = irandom_range(.2,1);
+speed = irandom_range(1,3);
 direction = toPlyr;
 
 //set image angle

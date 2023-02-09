@@ -1,5 +1,5 @@
 
-
+ path = noone;
 //makes it so you cant shoot every frame
 canShoot = true
 canCollide = false;
