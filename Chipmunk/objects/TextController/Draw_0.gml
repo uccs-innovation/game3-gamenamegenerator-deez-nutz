@@ -43,11 +43,23 @@ if(room == rm_winroom)
 	/// @DnDArgument : "caption" ""Score:""
 	draw_text_transformed(room_width/ 2, room_height / 2 + 100, string("Score:") + "", 2, 2, 0);
 
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 5C795A69
+	/// @DnDParent : 2E56C7D7
+	/// @DnDArgument : "x" "room_width/ 2"
+	/// @DnDArgument : "y" "room_height / 2 + 300"
+	/// @DnDArgument : "xscale" "2"
+	/// @DnDArgument : "yscale" "2"
+	/// @DnDArgument : "caption" ""Time:""
+	draw_text_transformed(room_width/ 2, room_height / 2 + 300, string("Time:") + "", 2, 2, 0);
+
 	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 05EB443F
 	/// @DnDParent : 2E56C7D7
-	/// @DnDArgument : "code" "/// @description Execute Code$(13_10)draw_text_transformed(room_width/ 2, room_height / 2 + 200, score * 10, 2, 2, 0);"
+	/// @DnDArgument : "code" "/// @description Execute Code$(13_10)draw_text_transformed(room_width/ 2, room_height / 2 + 200, score * 10, 2, 2, 0);$(13_10)draw_text_transformed(room_width / 2, room_height / 2 + 400, string("{0}:{1}", global.minutes, global.seconds), 2, 2, 0)"
 	/// @description Execute Code
 	draw_text_transformed(room_width/ 2, room_height / 2 + 200, score * 10, 2, 2, 0);
+	draw_text_transformed(room_width / 2, room_height / 2 + 400, string("{0}:{1}", global.minutes, global.seconds), 2, 2, 0)
 }

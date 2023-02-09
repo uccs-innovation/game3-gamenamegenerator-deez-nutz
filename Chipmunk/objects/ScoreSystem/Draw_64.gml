@@ -21,3 +21,12 @@ draw_set_font(fnt_score);
 /// @DnDArgument : "caption" "score"
 if(!variable_instance_exists(id, "__dnd_score")) __dnd_score = 0;
 draw_text(view_xport[0] + 42, view_yport[0] + 42, string(score) + string(__dnd_score));
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
+/// @DnDHash : 204F73DF
+/// @DnDArgument : "x" "view_xport[0] + 42"
+/// @DnDArgument : "y" "view_yport[0] + 100"
+/// @DnDArgument : "caption" """"
+/// @DnDArgument : "var" "string("{0}:{1}", global.minutes, global.seconds)"
+draw_text(view_xport[0] + 42, view_yport[0] + 100, string("") + string(string("{0}:{1}", global.minutes, global.seconds)));
